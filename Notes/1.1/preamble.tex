@@ -1,0 +1,27 @@
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{parskip}
+
+\usepackage[english]{babel}
+
+
+\geometry{margin=1in, a4paper}
+
+\newcommand{\rn}{\mathbb{R}}
+\newcommand{\abs}[1]{\left|#1\right|}
+
+\newcommand{\answer}{\item}
+
+\newenvironment{answers}[1]
+    {\begin{multicols}{#1}
+        \begin{enumerate}[a)]
+    }
+    {
+        \end{enumerate}
+        \end{multicols}
+    }
